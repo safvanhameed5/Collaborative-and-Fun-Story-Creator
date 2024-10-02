@@ -1,0 +1,246 @@
+.story-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #262626;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s;
+}
+
+.story-detail-container:hover {
+  background-color: black;
+}
+
+.story-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.story-content {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.story-details {
+  font-size: 1rem;
+  color: white;
+}
+
+.completed {
+  color: green;
+}
+
+.ongoing {
+  color: orange;
+}
+
+.contributions-title {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.contitle {
+  color: white;
+  font-size: large;
+}
+
+.contribution-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contribution-content {
+  color: lightskyblue;
+  font-size: 1rem;
+}
+
+.contribution-details {
+  font-size: 0.9rem;
+  color: lightseagreen;
+}
+
+.no-contributions {
+  font-style: italic;
+  color: #999;
+}
+
+.contribution-form {
+  margin-top: 20px;
+}
+
+.contribution-form textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.dan {
+  width: 20%;
+  padding: 10px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 130px;
+}
+
+.dan:hover {
+  background-color: #cb2519;
+}
+
+.del {
+  width: 20%;
+  padding: 10px 15px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.suc {
+  width: 20%;
+  float: right;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.suc:hover {
+  background-color: #0058b5;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+  .story-detail-container {
+      max-width: 700px;
+      padding: 15px;
+  }
+
+  .story-title {
+      font-size: 1.8rem;
+  }
+
+  .story-content {
+      font-size: 1.1rem;
+  }
+
+  .story-details,
+  .contribution-content {
+      font-size: 0.95rem;
+  }
+
+  .contributions-title {
+      font-size: 1.4rem;
+  }
+
+  .dan, .del, .suc {
+      width: 25%; /* Slightly wider buttons */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .story-detail-container {
+      max-width: 90%;
+      padding: 10px;
+  }
+
+  .story-title {
+      font-size: 1.6rem;
+  }
+
+  .story-content {
+      font-size: 1rem;
+  }
+
+  .story-details,
+  .contribution-content {
+      font-size: 0.9rem;
+  }
+
+  .contributions-title {
+      font-size: 1.3rem;
+  }
+
+  .dan, .del, .suc {
+      width: 30%; /* Wider buttons for better usability */
+      margin-left: 0; /* Reset margin for mobile layout */
+      margin-bottom: 10px; /* Add spacing below buttons */
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .story-detail-container {
+      max-width: 100%;
+      padding: 15px;
+  }
+
+  .story-title {
+      font-size: 1.4rem;
+  }
+
+  .story-content {
+      font-size: 0.95rem;
+  }
+
+  .story-details,
+  .contribution-content {
+      font-size: 0.85rem;
+  }
+
+  .contributions-title {
+      font-size: 1.2rem;
+  }
+
+  .dan, .del, .suc {
+      width: 100%; /* Full-width buttons on small screens */
+      margin: 0; /* Reset margin */
+  }
+
+  .suc {
+      float: none; /* Remove float to avoid layout issues */
+  }
+}
+
+/* Very small screens (small phones) */
+@media (max-width: 480px) {
+  .story-title {
+      font-size: 1.2rem;
+  }
+
+  .story-content {
+      font-size: 0.9rem;
+  }
+
+  .contributions-title {
+      font-size: 1rem;
+  }
+
+  .error-message {
+      font-size: 12px; /* Smaller font for error messages */
+  }
+
+  .contribution-form textarea {
+      height: 60px; /* Reduce height for smaller screens */
+  }
+}

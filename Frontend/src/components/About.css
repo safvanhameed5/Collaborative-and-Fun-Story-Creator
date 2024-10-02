@@ -1,0 +1,40 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 12%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s;
+  }
+
+  .about-container:hover {
+    background-color: #262626;
+  }
+  
+  .about-icon {
+    font-size: 50px;
+    color: skyblue;
+    margin-bottom: 20px;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    color: skyblue;
+    line-height: 1.6;
+    max-width: 700px;
+  }
+  

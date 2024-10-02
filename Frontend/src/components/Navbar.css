@@ -1,0 +1,103 @@
+/* General container for navbar */
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+/* Styling for the navbar */
+.navbar {
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for navbar content */
+.navbar-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: max-height 0.3s ease-in-out;
+  max-height: none; /* Always visible on desktop */
+}
+
+/* Styling for individual links */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+  color: skyblue;
+}
+
+.nav-link-active {
+  color: skyblue;
+}
+
+/* Active/Expanded state for mobile view */
+.navbar-active {
+  max-height: 500px; /* Adjust to fit content in mobile view */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Special styling for logout */
+.logout {
+  color: #ff4d4d;
+}
+
+/* Responsive menu button for mobile view */
+.navbar-toggler {
+  display: none;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive design */
+
+/* Tablet and smaller screens */
+@media (max-width: 750px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-content {
+      display: none; /* Initially hidden for mobile view */
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      align-items: flex-start;
+      padding: 1rem 0;
+      max-height: 0;
+  }
+
+  .navbar-toggler {
+      display: block; /* Show toggle button for mobile view */
+  }
+
+  .navbar-active {
+      display: flex; /* Show navbar links in mobile view when toggled */
+      max-height: 500px;
+  }
+
+  /* Adjust logout button for mobile */
+  #logout {
+      margin-left: 0;
+      width: 100%;
+      text-align: left;
+  }
+}
