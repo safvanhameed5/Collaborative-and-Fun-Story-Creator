@@ -32,7 +32,7 @@ const StoryList = () => {
 
   return (
     <div className="container">
-      <h1 className="title"><i>Choose your favourite story.</i></h1>
+      <h1 className="title"><i>Collaborative Story Maker</i></h1>
       <button onClick={createStory} className="create-story-button">Create Story</button>
       <div className='stretch'>
       {stories.length > 0 ? (
